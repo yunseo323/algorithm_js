@@ -1,8 +1,5 @@
 # JS 기본 개념 메모
-
-## 1. this 키워드
-
-## 2. 반복
+## 1. 반복
 
 `for...of`문: 반복가능한 객체(Array, Map, Set, String, arguments 등)에 대해서 반복함
 ```JS
