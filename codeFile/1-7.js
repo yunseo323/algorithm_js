@@ -1,19 +1,7 @@
-let b = 100;
+let arr = [1,2,3,4,5];
 
-function test() {
-  console.log(this.b);
-}
+let newArr = arr.filter((v, i)=>{
+    return v%2==0;
+});
 
-let obj = {
-  a: 20,
-  func1: test,
-  func2: function() {
-    console.log(this.b);
-  }
-};
-
-obj.func1(); // undefined
-obj.func2(); // undefined
-
-let gFunc1 = obj.func1;
-gFunc1(); 
+console.log(newArr); 
