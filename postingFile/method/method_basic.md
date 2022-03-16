@@ -97,3 +97,11 @@ let result = arr.reduce((acc,v)=>{
 console.log(result); //15
 ```
  
+5. slice, splice
+- `slice(start[, end])`: start부터 end 전까지의 복사본을 새로운 배열 객체로 반환한다.
+
+=> 원본 배열은 수정되지 않는다
+
+- `splice(start[, deleteCount])` : start부터 deleteCount 개수만큼 배열의 기존 요소를 제거해서 배열이 내용을 변경한다. 
+
+=> 원본 배열 자체가 수정된다
