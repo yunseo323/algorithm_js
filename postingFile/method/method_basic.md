@@ -102,6 +102,8 @@ console.log(result); //15
 
 => 원본 배열은 수정되지 않는다
 
-- `splice(start[, deleteCount])` : start부터 deleteCount 개수만큼 배열의 기존 요소를 제거해서 배열이 내용을 변경한다. 
+- `splice(start[, deleteCount])` : start부터 deleteCount 개수만큼 배열의 기존 요소를 제거해서 배열이 내용을 변경한다. (새 요소를 추가하여 배열의 내용을 변경한다)
 
 => 원본 배열 자체가 수정된다
+
+=> 전체 구문은 `splice(start[, deleteCount[, item1[, item2[, ...]]]])`, item1, item2의 배열에 추가할 요소를 지정하지 않으면 splice()는 요소 제거만 수행한다
