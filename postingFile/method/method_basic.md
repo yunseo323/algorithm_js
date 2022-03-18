@@ -130,3 +130,21 @@ console.log(arr); //[ 'COMPUTE', 'P', 'OG', 'AMMING' ]
 ### 7. indexOf (Array, String Method)
 
 indexOf는 배열, 혹은 문자열에서 지정된 요소를 찾을 수 있는 **첫번째 인덱스를 반환**하고, 존재하지 않으면 -1을 리턴한다.
+
+### 8. sort 이용해 배열 정렬
+sort는 기본적으로 문자열을 정렬하는데(아스키코드 순으로), 숫자 크기 순으로 정렬하려면 다음처럼 작성해야 한다
+
+- 숫자 오름차순, 내림차순 정렬
+```JS
+//오름차순 정렬
+numbers.sort((a,b)=> a-b);
+//내림차순 정렬
+numbers.sort((a,b)=> b-a);
+```
+
+### 9. 배열을 같은 값으로 초기화하기
+```JS
+//arr 배열을 n만큼 길이로 모든 값을 1로 초기화하기
+let arr;
+arr = Array.from({length:n},()=>1)
+```
