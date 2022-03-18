@@ -6,7 +6,7 @@ function solution(s){
             max = x.length;
             answer = x;
         }
-    };
+    }
     return answer;
 }
 let str=["teacher", "time", "student", "beautiful", "good"];
