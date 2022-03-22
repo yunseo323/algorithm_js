@@ -121,6 +121,8 @@ console.log(result); //15
 
 split은 넘겨진 구분자를 이용해 여러개의 문자열로 나눈 뒤 배열로 그 값을 반환한다.
 
+구분자를 `''` 빈칸으로 넘기면 문자열의 문자가 담긴다
+
 ```JS
 let str="COMPUTERPROGRAMMING";
 let arr = str.split('R');
@@ -148,3 +150,10 @@ numbers.sort((a,b)=> b-a);
 let arr;
 arr = Array.from({length:n},()=>1)
 ```
+
+### 10. isNaN()
+NaN은 Not a Number로, 해당 함수는 넘겨받는 값이 숫자가 아니라면 true를 반환하고 있다.
+
+isNaN 함수는 넘어오는 인수를 먼저 숫자로 변환한 다음에 결과값으로 NaN 여부를 파악하기에 혼란스러운 케이스가 발생하기도 한다.(ex. null을 넘겼을 때 false를 반환한다)
+
+이 부분을 해결하기 위해 Number.isNaN()이 존재하고, typeof를 사용할 수도 있다.
