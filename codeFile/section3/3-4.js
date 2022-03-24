@@ -43,6 +43,7 @@ function solution(str,word){
         if(s[i]===word)cnt=0;
         else cnt++;
         if(answer[i]>cnt) answer[i]=cnt; //기존 answer 배열과 비교해 더 작으면 바꿈
+        //-> answer[i] = Math.min(answer[i],cnt) 와 같이 표현 가능
     }
     return(answer);
 
