@@ -13,7 +13,7 @@ function solution(N,arr){
 }
 function isPrime(n){
     if(n<=1) return 0;
-    for(let i=2;i<n;i++){
+    for(let i=2;i<=parseInt(Math.sqrt(n));i++){ //n까지가 아니라 Math.sqrt(n)까지만 돌아도 됨
         if(n%i===0) return 0;
     }
     return 1;
