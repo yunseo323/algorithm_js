@@ -1,20 +1,18 @@
 function solution(n, k, card){
-    let answer, sum=[],f=1;
+    let answer,f=1;
+    let sum = new Set();
+    //중복을 제거한 값들의 집합인 Set 객체를 사용하자
     for(let i=0;i<n;i++){
         for(let j=i+1;j<n;j++){
             for(let k=j+1;k<n;k++){
-                sum.push(card[i]+card[j]+card[k]);
+                sum.add(card[i]+card[j]+card[k]);
             }
         }
     }
-    sum.sort((a,b)=>b-a); //내림차순
-    for(let i=0;i<n-1;i++){
-        if(sum[i]!=sum[i+1]) f++;
-        if(f===k){
-            answer=sum[i+1];
-            break;
-        }
-    }
+    //Set 객체는 .sort를 사용하지 못하기 때문에 배열로 한번 변환해 줘야함
+    let cardArr = Array.from(sum).sort((a,b)=>b-a); //내림차순
+    //console.log(cardArr);
+    answer = cardArr[k-1];
     return answer;
 }
 
