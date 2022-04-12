@@ -1,3 +1,4 @@
+//선택정렬
 function solution(arr){
     for(let i=0;i<arr.length;i++){
         let min=arr[i];
