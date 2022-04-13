@@ -1,18 +1,17 @@
 //선택정렬
 function solution(arr){
     for(let i=0;i<arr.length;i++){
-        let min=arr[i];
         let minindex=i;
         for(let j=i+1;j<arr.length;j++){
-            if(min>arr[j]){
-                min=arr[j];
-                minindex=j;
-            } 
+            if(arr[minindex]>arr[j]) minindex=j;
         }
+        /*
         let tmp = arr[i];
         arr[i]=arr[minindex];
         arr[minindex]=tmp;
-        console.log(arr);
+        => 대신에 최근 문법 사용하기
+        */
+       [arr[i],arr[minindex]]=[arr[minindex],arr[i]]; // 두값 교환됨
     }
     return arr;
 }

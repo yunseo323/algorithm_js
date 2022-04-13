@@ -42,3 +42,12 @@ Set 객체는 중복을 제거한 값들의 집합이다.
 - `.delete`: 객체에 요소 제거
 - `.clear`: 객체에 모든 요소 제거
 - 정렬을 하고 싶을 때 .sort를 못쓰기 때문에 Array로 변환해서 정렬해야한다
+
+## 4. 배열 원하는 값으로 초기화
+
+`Array.from` 사용하기
+
+=> 배열 arr을 원하는 length 길이만큼 0으로 모두 초기화하기
+```JS
+let arr=Array.from({length:length},()=>0); 
+```
