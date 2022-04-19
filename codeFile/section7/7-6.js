@@ -5,6 +5,8 @@ function solution(arr){
     sarr.forEach((v,i)=>{
         if(v!==arr[i]) answer.push(i+1);
     })
+    console.log(arr);
+    console.log(sarr);
     return answer;
 }
 
