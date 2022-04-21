@@ -152,7 +152,6 @@ arr.sort((a,b)=> b-a);
 let arr;
 arr = Array.from({length:n},()=>1)
 ```
-
 ### 10. isNaN()
 NaN은 Not a Number로, 해당 함수는 넘겨받는 값이 숫자가 아니라면 true를 반환하고 있다.
 
