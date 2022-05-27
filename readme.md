@@ -16,6 +16,11 @@
 
 - [7. 정렬과 그리디, 결정 알고리즘(이분검색)](https://github.com/yunseo323/algorithm_js/blob/main/codeFile/section7/7.md)
 
+- [8. 재귀함수와 완전 탐색(with DFS)](https://github.com/yunseo323/algorithm_js/blob/main/codeFile/section8/8.md)
+
+- [9. 그래프와 탐색(with DFS, BFS)](https://github.com/yunseo323/algorithm_js/blob/main/codeFile/section9/9.md)
+
+- [10. 동적계획법(Dynamic Programming)](https://github.com/yunseo323/algorithm_js/blob/main/codeFile/section10/10.md)
 ---------
 
 ## posting File
