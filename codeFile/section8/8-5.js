@@ -1,3 +1,4 @@
+//이진트리 DFS
 function solution(arr){
     let answer="NO", flag=0;
     let total=arr.reduce((a, b)=>a+b, 0);

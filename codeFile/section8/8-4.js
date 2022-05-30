@@ -1,3 +1,4 @@
+//이진트리 DFS
 function solution(n){
     let answer=[];
     let check=Array.from({length:n+1},()=>0);
